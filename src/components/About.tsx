@@ -70,7 +70,7 @@ const About = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group p-6 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in-up"
+              className="group p-6 bg-card rounded-lg border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 animate-fade-in-up hover:scale-105 hover:-translate-y-1"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="mb-4 p-3 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">

@@ -14,8 +14,8 @@ const Hero = () => {
           {/* Left column - Text content */}
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              <span className="block text-foreground">Didi Berman</span>
-              <span className="block bg-gradient-text bg-clip-text text-transparent mt-2">
+              <span className="block text-foreground animate-fade-in">Didi Berman</span>
+              <span className="block bg-gradient-text bg-clip-text text-transparent mt-2 pb-2 animate-fade-in [animation-delay:200ms]">
                 AI Automation Engineer
               </span>
             </h1>
