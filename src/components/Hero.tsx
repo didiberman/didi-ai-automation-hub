@@ -46,6 +46,13 @@ const Hero = () => {
               >
                 View Projects
               </Button>
+              <Button 
+                variant="hero-outline" 
+                size="lg"
+                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                About Me
+              </Button>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-6 text-muted-foreground">
