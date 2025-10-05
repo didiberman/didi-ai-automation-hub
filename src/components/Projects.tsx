@@ -1,9 +1,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ShoppingCart, Languages, TrendingUp } from "lucide-react";
+import { ShoppingCart, Languages, TrendingUp, Instagram } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      icon: Instagram,
+      title: "Instagram Lead Warmer",
+      company: "World-Leading Instagram Marketing Expert",
+      description: "Built an intelligent lead warming system that automatically analyzes prospects' Instagram accounts and sends personalized, data-driven emails. The automation combines Instagram API data with AI-powered insights to craft highly relevant outreach messages, significantly improving response rates and conversion.",
+      tags: ["n8n", "Instagram API", "AI Analysis", "Email Automation", "Personalization"],
+      gradient: "from-pink-500/10 to-rose-500/10",
+    },
     {
       icon: ShoppingCart,
       title: "eCommerce Invoice Automation",
