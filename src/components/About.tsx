@@ -1,8 +1,17 @@
 import { Sparkles, Code, Brain, Heart } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const About = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="about" className="py-24 px-4 relative animate-fade-in">
+    <section 
+      ref={elementRef}
+      id="about" 
+      className={`py-24 px-4 relative transition-all duration-1000 ${
+        isVisible ? 'opacity-100 animate-slide-in-left' : 'opacity-0 -translate-x-20'
+      }`}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
       
       <div className="container max-w-6xl mx-auto relative z-10">

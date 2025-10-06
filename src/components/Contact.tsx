@@ -1,9 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const Contact = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+  
   return (
-    <section id="contact" className="py-24 px-4 relative animate-fade-in">
+    <section 
+      ref={elementRef}
+      id="contact" 
+      className={`py-24 px-4 relative transition-all duration-1000 ${
+        isVisible ? 'opacity-100 animate-slide-in-bottom' : 'opacity-0 translate-y-20'
+      }`}
+    >
       <div className="absolute inset-0 bg-gradient-to-t from-background via-card/30 to-background" />
       
       <div className="container max-w-4xl mx-auto relative z-10">
