@@ -25,7 +25,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-24 px-4 relative">
+    <section id="skills" className="py-24 px-4 relative animate-fade-in">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-card/30 to-background" />
       
       <div className="container max-w-6xl mx-auto relative z-10">

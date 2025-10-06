@@ -2,7 +2,7 @@ import { Quote } from "lucide-react";
 
 const Testimonials = () => {
   return (
-    <section className="py-24 px-4 relative">
+    <section id="testimonials" className="py-24 px-4 relative animate-fade-in">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/10 to-background" />
       
       <div className="container max-w-5xl mx-auto relative z-10">

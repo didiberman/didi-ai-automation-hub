@@ -3,7 +3,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 px-4 relative">
+    <section id="contact" className="py-24 px-4 relative animate-fade-in">
       <div className="absolute inset-0 bg-gradient-to-t from-background via-card/30 to-background" />
       
       <div className="container max-w-4xl mx-auto relative z-10">
