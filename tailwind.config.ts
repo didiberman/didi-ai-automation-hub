@@ -138,6 +138,32 @@ export default {
             boxShadow: "0 0 40px hsl(199 89% 48% / 0.6)"
           }
         },
+        "explode-scale": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.5)"
+          },
+          "70%": {
+            transform: "scale(1.05)"
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)"
+          }
+        },
+        "fall": {
+          "0%": {
+            transform: "translateY(-100px) rotate(0deg)",
+            opacity: "0.2"
+          },
+          "50%": {
+            opacity: "0.3"
+          },
+          "100%": {
+            transform: "translateY(110vh) rotate(360deg)",
+            opacity: "0"
+          }
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -148,6 +174,8 @@ export default {
         "slide-in-bottom": "slide-in-bottom 0.8s ease-out",
         "slide-in-left": "slide-in-left 0.8s ease-out",
         "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "explode-scale": "explode-scale 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
+        "fall": "fall linear infinite",
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
